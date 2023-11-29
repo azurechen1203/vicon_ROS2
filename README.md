@@ -48,11 +48,6 @@ $ ros2 interface list | grep vicon
 
 ### Running the program
 
-Open a new terminal and source the project workspace:
-```
-$ source vicon_receiver/install/setup.bash
-```
-
 Open the launch file and edit the parameters. Running `colcon build` is not needed because of the `--symlink-install` option previously used.
 
 Now you can the program with
