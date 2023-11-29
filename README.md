@@ -1,4 +1,4 @@
-# Vicon receiver for ROS 2 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/andreacamisa/ros2-vicon-receiver)
+# Vicon ROS2
 
 **vicon-ROS2** is a ROS 2 package, written in C++, that retrieves data from Vicon software and publishes it on ROS 2 topics. The code is partly derived from a mixture of [ROS2Vicon](https://github.com/aheuillet/Vicon-ROS2), [Vicon bridge](https://github.com/ethz-asl/vicon_bridge) and [ros2-vicon-receiver](https://github.com/OPT4SMART/ros2-vicon-receiver)
 
@@ -63,9 +63,9 @@ Exit the program with CTRL+C.
 
 ### Information on ROS 2 topics and messages
 
-The **vicon-ROS2** package creates a topic for each segment in each subject with the pattern `namespace/subject_name/segment_name`. Information is published on the topics as soon as new data is available from the vicon client (typically at the vicon client frequency). The message type [Position](vicon_receiver/msg/Position.msg) is used.
+The **vicon-ROS2** package creates a topic for each segment in each subject with the pattern `namespace/subject_name/segment_name`. Information is published on the topics as soon as new data is available from the vicon client (typically at the vicon client frequency). The message type [Position](vicon_ROS2/msg/Position.msg) is used.
 
-Example: suppose your namespace is the default `vicon` and you have two subjects (`subject_1` and `subject_2`) with two segments each (`segment_1` and `segment_2`). Then **ros2-vicon-receiver** will publish [Position](vicon_receiver/msg/Position.msg) messages on the following topics:
+Example: suppose your namespace is the default `vicon` and you have two subjects (`subject_1` and `subject_2`) with two segments each (`segment_1` and `segment_2`). Then **vicon-ROS2** will publish messages on the following topics:
 ```
 vicon/subject_1/segment_1
 vicon/subject_1/segment_2
