@@ -28,7 +28,7 @@ $ ./install_libs.sh
 
 ### Clone the repo:
 ```
-$ git clone https://github.com/azurechen1203/vicon_ROS2.git
+$ git clone https://github.com/azurechen1203/vicon_ROS2.git vicon_receiver
 ```
 
 ### Source the ROS2 workspace:
