@@ -26,6 +26,11 @@ $ ./install_libs.sh
 
 ## Quick start
 
+### Clone the repo:
+```
+$ git clone https://github.com/azurechen1203/vicon_ROS2.git
+```
+
 ### Source the ROS2 workspace:
 ```
 $ source /opt/ros/humble/setup.bash
